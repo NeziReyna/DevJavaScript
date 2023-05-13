@@ -10,4 +10,9 @@
   position: fixed;
   height: 100%;
   overflow-y: auto;
+}
+
+.section__navar-2 {
+  position: relative;
+  top: 60px;
 }/*# sourceMappingURL=styles.css.map */
