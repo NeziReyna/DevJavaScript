@@ -102,8 +102,8 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-center align-items-baseline mt-4">
-            <div class="col-md-1 d-none d-md-block">
+        <div class="d-flex justify-content-center align-items-baseline mt-4 ">
+            <div class="col-md-1 d-none d-md-block position-sticky">
                 <ul style="list-style: none;" class="" id="aside-post">
                     <li class="nav-item">
                         <a class="m-2" href="#"><img style="width: 2vw;" src="./img/heart.svg" alt="icon-search"
@@ -165,27 +165,44 @@
                 </div>
             </div>
             <div class="col-md-4 d-none d-md-block">
-                <div class="position-sticky" style="top: 12rem;">
+                <div class="position">
                     <div class="p-4 mb-4 bg-light rounded">
-                        <h4 class="fst-italic">Gloria Maldonado</h4>
-                        <button type="button" class="btn btn-primary">Follow</button>
-                        <p class="mb-0">Howdy, I’m Gloria. I’m a web developer living in United States. I am a fan of
+                        <div class="d-flex">
+                            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png" class="crayons-avatar__image" alt="" loading="lazy">
+                        <h5 class="fst-italic">Gloria Maldonado</h5>
+                        </div>
+                        <button type="button" class="btn btn-primary d-grid gap-2 col-12 mx-auto mx-3">Follow</button>
+                        <p>Howdy, I’m Gloria. I’m a web developer living in United States. I am a fan of
                             shop, data, and technology.</p>
-                        <h7>LOCATION</h7>
+                        <h7 style="font-weight: bold;">LOCATION</h7>
                         <p>NY, United States</p>
-                        <h7>EDUCATION</h7>
+                        <h7 style="font-weight: bold;">EDUCATION</h7>
                         <p>International Business, Florida University</p>
-                        <h7>WORK</h7>
+                        <h7 style="font-weight: bold;">WORK</h7>
                         <p>Analyzify</p>
                     </div>
 
-                    <div class="p-4">
-                        <h4 class="fst-italic">More from Gloria Maldonado</h4>
-                        <ol class="list-unstyled mb-0">
-                            <li><a href="#">Bla bla bla March 2021</a></li>
-                            <li><a href="#">Bla bla bla February 2021</a></li>
-                            <li><a href="#">Bla bla bla January 2021</a></li>
-                        </ol>
+                    <div class="p-4 mb-4 bg-light rounded">
+                        <h4 class="fst-italic">More from <a class="text-decoration-none" href="#">Gloria Maldonado</a></h4>
+                        <a class="border-top text-decoration-none text-reset text-nowrap mt-5" href="#">
+                            Robot Companions
+                            <div class=" ">
+                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                            </div>
+                          </a>
+                          <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
+                            Robot Companions                            <div class="">
+                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                            </div>
+                          </a>
+                          <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
+                            Robot Companions                            <div class="">
+                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                            </div>
+                          </a>
                     </div>
                 </div>
             </div>
