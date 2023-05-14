@@ -23,4 +23,9 @@
 
 #aside-post > li {
   margin-top: 2vh;
+}
+
+.section__navar-2 {
+  position: relative;
+  top: 60px;
 }/*# sourceMappingURL=styles.css.map */
