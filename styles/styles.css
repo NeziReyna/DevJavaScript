@@ -28,4 +28,15 @@
 .section__navar-2 {
   position: relative;
   top: 60px;
+}
+
+.btn:hover {
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  color: purple;
+}
+
+.footer__container-list-link {
+  margin-right: 25px;
 }/*# sourceMappingURL=styles.css.map */
