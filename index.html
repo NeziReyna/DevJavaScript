@@ -14,7 +14,7 @@
     <title>Maquetado DevTo</title>
 </head>
 
-<body class="bg-body-secondary">
+<body class="bg-light">
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <div class="left__nav--section">
@@ -27,8 +27,14 @@
                         src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
                         alt="DEV Community"></a>
             </div>
+            <div  class="search__nav--section " style="position: absolute; left: 150px; " >
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2 d-none d-lg-block" style="width: 420px;" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success d-none d-lg-block " type="submit"><a href="#" class="mx-2"><img src="./img/search_icon.svg" alt="search_icon"></a></button>
+                  </form>
+            </div>
             <div class="right__nav--section d-flex flex-nowrap mx-1">
-                <a href="#" class="mx-2"><img src="./img/search_icon.svg" alt="search_icon"></a>
+                <a class="right__nav--section--search d-lg-none" href="#" class="mx-2"><img src="./img/search_icon.svg" alt="search_icon"></a>
                 <a href="#" class="mx-2"><img src="./img/bell_icon.svg" alt="bell_icon"></a>
                 <a href="#" class="mx-2"><img class="crayons-avatar__image" alt="" id="nav-profile-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ay3RvrXi--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/975225/4f71a4bb-4099-4ccf-9a89-f755a94da6b9.png"></a>
             </div>
@@ -73,7 +79,7 @@
             </div>
         </div>
     </nav>
-    <section class="section__navar-2" >
+    <!-- <section class="section__navar-2  d-flex  flex-wrap" >
         <button  type="button" class="btn">Relevant</button>
         <button  type="button" class="btn" >Lasted</button>
         <button type="button" class="btn" >Top</button>
@@ -90,18 +96,11 @@
     color: purple;
     
 }
-    </style>
+    </style> -->
 
-    <footer class="footer__container " style="position: relative; top:800px; height: 230px; background-color: bg-secondary;">
-
-         <style>
-            .footer__container-list-link
-         {
-            margin-right:25px;
-         }
-         </style>
-        
-        <p class="footer__container-text " style="text-align: center;"><a style="text-decoration: none;" href="https://dev.to/">DEV Community</a>—A constructive and inclusive social network for software developers. With you every step of your journy.</p>
+    <footer class="footer__container bg-body-secondary fixed-bottom " style="height: 230px; background-color: bg-secondary;">
+    
+        <p class="footer__container-text mt-4" style="text-align: center;"><a style="text-decoration: none;" href="https://dev.to/">DEV Community</a>—A constructive and inclusive social network for software developers. With you every step of your journy.</p>
          <ul class="footer__container-list d-flex flex-wrap " style=" display: flex; justify-content:center; ">
          <li class="footer__container-list-link " style="list-style: none; "><a style="text-decoration: none" href="">Home</a></li>
          <li class="footer__container-list-link" ><a style="text-decoration: none;" href="">Listing</a></li>
