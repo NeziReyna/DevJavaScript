@@ -10,4 +10,17 @@
   position: fixed;
   height: 100%;
   overflow-y: auto;
+}
+
+#aside-post {
+  height: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 8vh;
+}
+
+#aside-post > li {
+  margin-top: 2vh;
 }/*# sourceMappingURL=styles.css.map */
