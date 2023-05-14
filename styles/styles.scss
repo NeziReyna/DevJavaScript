@@ -22,6 +22,16 @@
     top: 60px;
  }
 
+ .ml-2
+{
+   margin-left: var(--su-2);
+}
 
- 
-
+ .dot
+  {
+   height: var(--su-1);
+   width: var(--su-1);
+   background-color: var(--base-70);
+   border-radius: 50%;
+   display: inline-block;
+}
