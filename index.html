@@ -14,11 +14,12 @@
     <title>Maquetado DevTo</title>
 </head>
 
-<body class="bg-body-secondary">
+<body class=" bg-body-secondary ">
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
+            
             <div class="left__nav--section">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler d-md-none " type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,6 +28,7 @@
                         src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
                         alt="DEV Community"></a>
             </div>
+           
             <div class="right__nav--section d-flex flex-nowrap mx-1">
                 <a href="#" class="mx-2"><img src="./img/search_icon.svg" alt="search_icon"></a>
                 <a href="#" class="mx-2"><img src="./img/bell_icon.svg" alt="bell_icon"></a>
@@ -75,14 +77,62 @@
     </nav>
  <div>
     
-    <h2 class="row my-3 mx-2">Revelant</h2>
-    <ul class="d-inline-flex  " style="list-style-type: none;">
+    <h2 class="row my-3 mx-2">.</h2>
+   
+    </ul>
+    <div class="container-md  text-star">
+        <div class="row">
+            <div class="col-3 d-none d-md-block">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link">🏠Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🗃️Reading List</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">📃Listings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🎙️Podcasts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🎥Videos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🏷️Tags</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🛍️Forem Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">❤️Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🏳️‍🌈About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">📯Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">📖Guides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🤔Software comparisons</a></li>
+                    </ul>
+                    <h5 class="my-3"style="font-weight: bold;">Other</h5>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="#">👍Code of Conduct</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🤓Privacy Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">👀Terms of use</a></li>
+                    </ul>
+                    <div class="d-inline-flex justify-content-start mx-1 my-4" style="width: 100%;top: 50px;">
+                        <a href="#" class="mx-2"><img src="./img/twitter.svg" alt="twitter"></a>
+                        <a href="#" class="mx-2"><img src="./img/facebook.svg" alt="facebook"></a>
+                        <a href="#" class="mx-2"><img src="./img/github.svg" alt="github"></a>
+                        <a href="#" class="mx-2"><img src="./img/instagram.svg" alt="instagram"></a>
+                        <a href="#" class="mx-2"><img src="./img/twitch.svg" alt="twitch"></a>
+                        <a href="#" class="mx-2"><img src="./img/fosstodon.svg" alt="fosstodon"></a>
+                    </div>
+                    
+                </div>
+                <div class="col my-4"></div>
+                <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+          <div class="col col-ms-12 container-fluid order-md-frist">
+    <div class="d-flex align-items-start">   
+     <ul class="d-inline-flex   " style="list-style-type: none">
         <li class="mx-1 fw-bold btn ">Revelant</li>
         <li class="mx-1 btn">Latest</li>
         <li class="mx-1 btn">Top</li>
-    </ul>
- </div> 
-     <div class="w-100 card justify-content-center" style="width: 18rem;">
+    
+     </ul>
+    </div>
+     <div class="w-100 col card justify-content-center" style="width: 18rem;">
         <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--kzSSw_zT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxvbnixzgshb140xnb8b.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -91,30 +141,60 @@
         <ul class="list-group list-group-flush ">
           <li class="list-group-item ">
             <div class="ms-2 me-auto">
-                <div href="#" class="btn btn-praimary mx-2"><img class="crayons-avatar__image" alt="" id="nav-profile-image" src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/322598830_709831830656892_1419090042844055629_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=4hiceb5sKaYAX-VZk_I&_nc_ht=scontent-lax3-2.xx&oh=00_AfBDWMVt7ON8NqKrhQVfFoolOn2r1dPkV-2WqY3hNoAYcQ&oe=64646D81"></div>
-                <div class="fw-bold">Subheading</div>
+               
           </li>
           <li class="list-group-item">A second item</li>
           <li class="list-group-item">A third item</li>
         </ul>
         </div>
-        <div class="w-100 my-3 card justify-content-center" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--kzSSw_zT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxvbnixzgshb140xnb8b.jpg" class="card-img-top" alt="...">
+    <div class="w-100 my-3 card  justify-content-center" style="width: 18rem;">
+            <img src="https://external-preview.redd.it/_qlhx1B2BmgXNDg05_CXicpTL05lJqw9tJ8SKlIJSpw.jpg?auto=webp&v=enabled&s=91985e054fdb698b8c1a8f18fa73ee043c82d874" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush ">
+              <h5 class="card-title">Data Structures In Frontend JavaScript In The Real World</h5>
+              <p class="card-text">Data structures can be intimidating. Especially for the self-taught folks among us. If you already tried to study data structures in JavaScript you know what typically happens:
+
+                A bunch of CS theory is thrown at you.
+                You read pages of code that manually implement e.g. a linked list.
+                All the examples are abstract using foo and bar or cats and dogs.
+                On top of that, you’re confronted with smart-looking diagrams like this...</p>
+              </div class="row align-items-start">
+            <ul class="list-group list-group-flush  ">
               <li class="list-group-item ">
-                <div class="ms-2 me-auto">
-                    <div href="#" class="btn btn-praimary mx-2"><img class="crayons-avatar__image" alt="" id="nav-profile-image" src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/322598830_709831830656892_1419090042844055629_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=4hiceb5sKaYAX-VZk_I&_nc_ht=scontent-lax3-2.xx&oh=00_AfBDWMVt7ON8NqKrhQVfFoolOn2r1dPkV-2WqY3hNoAYcQ&oe=64646D81"></div>
-                    <div class="fw-bold">Subheading</div>
+                <div class=" me-auto row ">
+                    <div href="#" class="btn  col-1 outline-none btn-praimary d-flex justify-content-start"><img class="crayons-avatar__image" alt="" id="nav-profile-image" src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/322598830_709831830656892_1419090042844055629_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=4hiceb5sKaYAX-VZk_I&_nc_ht=scontent-lax3-2.xx&oh=00_AfBDWMVt7ON8NqKrhQVfFoolOn2r1dPkV-2WqY3hNoAYcQ&oe=64646D81"></div>
+                    <div class="bg-body-secondary col d-flex rounded-2 justify-content-evenly ">La verdad ni esta tan chido</div>
               </li>
               <li class="list-group-item">A second item</li>
               <li class="list-group-item">A third item</li>
             </ul>
-            </div>
- 
+        </div>
+    </div>
+    <div class=" col-3 d-none d-lg-block">
+      <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Light card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Light card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Light card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col order-last">
+            Third in DOM, ordered last
+          </div>
+        </div>
+       
+      </div>
 </body>
 
 </html>
