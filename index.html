@@ -17,8 +17,7 @@
 <body class="bg-light">
   <nav class="navbar bg-body-tertiary fixed-top mb-5">
     <div class="container-fluid">
-
-      <div class="left__nav--section">
+      <div class="left__nav--section d-flex">
         <button class="navbar-toggler d-md-none " type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,16 +25,16 @@
         <a href="#" class="logo__button--header"><img class="site-logo__img" style="height: 40px; width: 50px;"
             src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
             alt="DEV Community"></a>
+            <div class="search__nav--section">
+              <form class="d-flex " role="search">
+                <input class="form-control me-2 d-none d-lg-block" style="width: 420px;" type="search" placeholder="Search"
+                  aria-label="Search">
+                <button class="btn btn-outline-success d-none d-lg-block " type="submit"><a href="#" class="mx-2"><img
+                      src="./img/search_icon.svg" alt="search_icon"></a></button>
+              </form>
+            </div>
       </div>
       <div class="right__nav--section d-flex flex-nowrap mx-1">
-        <div class="search__nav--section">
-          <form class="d-flex " role="search">
-            <input class="form-control me-2 d-none d-lg-block" style="width: 420px;" type="search" placeholder="Search"
-              aria-label="Search">
-            <button class="btn btn-outline-success d-none d-lg-block " type="submit"><a href="#" class="mx-2"><img
-                  src="./img/search_icon.svg" alt="search_icon"></a></button>
-          </form>
-        </div>
         <a class="right__nav--section--search d-lg-none" href="#" class="mx-2"><img src="./img/search_icon.svg"
             alt="search_icon"></a>
         <a href="#" class="mx-2"><img src="./img/bell_icon.svg" alt="bell_icon"></a>
