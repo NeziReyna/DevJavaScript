@@ -29,7 +29,7 @@
               <form class="d-flex " role="search">
                 <input class="form-control me-2 d-none d-lg-block" style="width: 420px;" type="search" placeholder="Search"
                   aria-label="Search">
-                <button class="btn btn-outline-success d-none d-lg-block " type="submit"><a href="#" class="mx-2"><img
+                <button class="btn d-none d-lg-block position-absolute" id="buttonforsearch" type="submit"><a href="#" class="mx-2"><img
                       src="./img/search_icon.svg" alt="search_icon"></a></button>
               </form>
             </div>
@@ -125,7 +125,7 @@
       </div>
       <div class="col col-ms-12 container-fluid order-md-frist">
         <div class="d-flex align-items-start">
-          <ul class="d-inline-flex   " style="list-style-type: none">
+          <ul class="d-inline-flex align-items-start" style="list-style-type: none">
             <li class="mx-1 fw-bold btn ">Revelant</li>
             <li class="mx-1 btn">Latest</li>
             <li class="mx-1 btn">Top</li>
@@ -181,7 +181,7 @@
           </ul>
         </div>
       </div>
-      <div class=" col-3 d-none d-lg-block">
+      <div class=" col-3 d-none d-lg-block" id="third_column">
         <div class="card text-bg-light mb-3" style="max-width: 18rem;">
           <div class="card-header">Header</div>
           <div class="card-body">
