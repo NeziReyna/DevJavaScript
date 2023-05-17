@@ -52,4 +52,10 @@
 #secondary__navbar {
   right: 40px;
   top: 10px;
+}
+
+.footer__container {
+  position: relative;
+  height: 230px;
+  top: 100px;
 }/*# sourceMappingURL=styles.css.map */

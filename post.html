@@ -13,8 +13,8 @@
 </head>
 
 <body class="bg-body-secondary">
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
+    <header class="sticky-top">
+        <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -102,8 +102,8 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-center align-items-baseline mt-4 ">
-            <div class="col-md-1 d-none d-md-block position-sticky">
+        <div class="d-flex justify-content-center align-items-baseline">
+            <div class="col-md-1 d-none d-md-block sticky-top">
                 <ul style="list-style: none;" class="" id="aside-post">
                     <li class="nav-item">
                         <a class="m-2" href="#"><img style="width: 2vw;" src="./img/heart.svg" alt="icon-search"
@@ -135,20 +135,19 @@
                         </div>
                     </li>
                 </ul>
-
             </div>
             <div class="col-sm-12 col-md-6 mx-2">
                 <div class="position" style="top: 10rem;">
                     <article class="blog-post mt-5 bg-body-tertiary rounded">
                         <img src="../img/titlePost.png" class="img-fluid" alt="TitlePost">
-                        <p class="blog-post-meta p-4">
+                        <p class="blog-post-meta p-3">
                             Posted on
                             <time datetime="2022-11-18T12:42:15Z" class="date-no-year"
                                 title="Friday, November 18, 2022 at 6:42:15 AM">Nov 18</time>
                             • Originally published at
                             <a href="#">profy.dev</a>
                         </p>
-                        <h2 class="p-4">Data Structures In Frontend JavaScript In The Real World (With React Code Examples)</h2>
+                        <h2 class="p-2">Data Structures In Frontend JavaScript In The Real World (With React Code Examples)</h2>
                         <a href="#" class="ms-5">#react</a>
                         <a href="#">#javascript</a>
                         <a href="#">#webdev</a>
@@ -208,15 +207,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer__container "
-        style="position: relative; top:800px; height: 230px; background-color: bg-secondary;">
-
-        <style>
-            .footer__container-list-link {
-                margin-right: 25px;
-            }
-        </style>
-
+    <footer class="footer__container bg-body-secondary">
         <p class="footer__container-text " style="text-align: center;"><a style="text-decoration: none;"
                 href="https://dev.to/">DEV Community</a>—A constructive and inclusive social network for software
             developers. With you every step of your journy.</p>
