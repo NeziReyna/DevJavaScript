@@ -13,214 +13,193 @@
 </head>
 
 <body class="bg-body-secondary">
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
+    <header class="sticky-top">
+        <nav class="navbar bg-white mb-3 shadow-sm">
             <div class="container-fluid">
-                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
+              <div class="left__nav--section d-flex">
+                <button class="navbar-toggler d-md-none " type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community 👩‍💻👨‍💻</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🏚️ Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🗃️ Reading list</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">📃 Listing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🎙️ Podcast</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">📽️ Videos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🏷️ Tags</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">💡 FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🛍️ Forem Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">❤️ Sponsor</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🏳️‍🌈 About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">📯 Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">📖 Guides</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🤔 Software Comparisons</a>
-                            </li>
-                            <h5 class="mt-5">Other</h5>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">👍 Code of Conduct</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">🤓 Privacy Policy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">👀 Terms of Use</a>
-                            </li>
-                            <div class="nav-item mt-3">
-                                <img class="m-2" src="../img/icon-facebook.svg" alt="icon-facebook">
-                                <img class="m-2" src="../img/icon-youtube.svg" alt="icon-youtube">
-                                <img class="m-2" src="../img/icon-twitter.svg" alt="icon-twitter">
-                                <img class="m-2" src="../img/icon-pinterest.svg" alt="icon-pinterest">
-                                <img class="m-2" src="../img/icon-instagram.svg" alt="icon-instagram">
-                            </div>
-                        </ul>
-                    </div>
+                <a href="./index.html" class="logo__button--header"><img class="site-logo__img" style="height: 40px; width: 50px;"
+                    src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                    alt="DEV Community"></a>
+                <div class="search__nav--section d-none d-md-block">
+                  <form class="d-flex " role="search">
+                    <input class="form-control me-2" style="width: 420px;" type="search" placeholder="Search"
+                      aria-label="Search">
+                    <button class="btn position-absolute" id="buttonforsearch" type="submit"><a href="#"
+                        class="mx-2"><img src="./img/search_icon.svg" alt="search_icon"></a></button>
+                  </form>
                 </div>
-                <div class="col d-flex justify-content-start"><a href="./index.html" class="logo__button--header"><img
-                            class="site-logo__img" style="height: 40px; width: 50px;"
-                            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-                            alt="DEV Community"></a></div>
-                <div class="col d-flex justify-content-end">
-                    <a class="m-2" href="#"><img style="width: 25px;" src="../img/icon-search.svg"
-                            alt="icon-search"></a>
-                    <a class="m-2" href="#"><img style="width: 25px;" src="../img/icon-notification.svg"
-                            alt="icon-notification"></a>
-                    <a class="m-2" href="#"><img style="width: 25px;" src="../img/icon-profile.svg"
-                            alt="icon-profile"></a>
+              </div>
+              <div class="right__nav--section d-flex flex-nowrap mx-1">
+                <a class="right__nav--section--search d-md-none" href="#" class="mx-2"><img src="./img/search_icon.svg"
+                    alt="search_icon"></a>
+                <a href="#" class="mx-2"><img src="./img/bell_icon.svg" alt="bell_icon"></a>
+                <a href="#" class="mx-2"><img class="crayons-avatar__image" alt="" id="nav-profile-image"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ay3RvrXi--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/975225/4f71a4bb-4099-4ccf-9a89-f755a94da6b9.png"></a>
+              </div>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bold;">DEV Community</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-        </nav>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a class="nav-link">🏠Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🗃️Reading List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">📃Listings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🎙️Podcasts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🎥Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🏷️Tags</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🛍️Forem Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">❤️Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🏳️‍🌈About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">📯Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">📖Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🤔Software comparisons</a></li>
+                  </ul>
+                  <h5 class="my-3" style="font-weight: bold;">Other</h5>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a class="nav-link" href="#">👍Code of Conduct</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">🤓Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">👀Terms of use</a></li>
+                  </ul>
+                  <div class="d-inline-flex justify-content-start mx-1 my-4" style="width: 100%;top: 50px;">
+                    <a href="#" class="mx-2"><img src="./img/twitter.svg" alt="twitter"></a>
+                    <a href="#" class="mx-2"><img src="./img/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="mx-2"><img src="./img/github.svg" alt="github"></a>
+                    <a href="#" class="mx-2"><img src="./img/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="mx-2"><img src="./img/twitch.svg" alt="twitch"></a>
+                    <a href="#" class="mx-2"><img src="./img/fosstodon.svg" alt="fosstodon"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-center align-items-baseline mt-4 ">
-            <div class="col-md-1 d-none d-md-block position-sticky">
-                <ul style="list-style: none;" class="" id="aside-post">
-                    <li class="nav-item">
-                        <a class="m-2" href="#"><img style="width: 2vw;" src="./img/heart.svg" alt="icon-search"
-                                ></a>
-                    </li>
-                    <li>
-                        <a class="m-2" href="#"><img style="width: 2vw;" src="../img/comment-svgrepo-com.svg"
-                                alt="comment"></a>
-                    </li>
-                    <li>
-                        <a class="m-2" href="#"><img style="width: 2vw;" src="../img/bookmark-svgrepo-com.svg"
-                                alt="bookmark"></a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none"
-                                id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../img/three-dots-menu-svgrepo-com.svg" alt="" class="rounded-circle mx-2"
-                                    style="width: 2vw">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1 d-none d-md-block position-sticky">
+                    <ul style="list-style: none;" class="" id="aside-post">
+                        <li class="nav-item">
+                            <a class="m-2" href="#"><img style="width: 2vw;" src="./img/heart.svg"
+                                    alt="icon-search"></a>
+                        </li>
+                        <li>
+                            <a class="m-2" href="#"><img style="width: 2vw;" src="../img/comment-svgrepo-com.svg"
+                                    alt="comment"></a>
+                        </li>
+                        <li>
+                            <a class="m-2" href="#"><img style="width: 2vw;" src="../img/bookmark-svgrepo-com.svg"
+                                    alt="bookmark"></a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="d-flex align-items-center link-dark text-decoration-none"
+                                    id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../img/three-dots-menu-svgrepo-com.svg" alt="" class="rounded-circle mx-2"
+                                        style="width: 2vw">
+                                </a>
+                                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                    <li><a class="dropdown-item" href="#">Copy Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Share to Twitter</a></li>
+                                    <li><a class="dropdown-item" href="#">Share to Linkedin</a></li>
+                                    <li><a class="dropdown-item" href="#">Share to Reddit</a></li>
+                                    <li><a class="dropdown-item" href="#">Share to Facebook</a></li>
+                                    <li><a class="dropdown-item" href="#">Report abuse</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-md-9 col-xl-6">
+                    <div class="position">
+                        <article class="blog-post bg-body-tertiary rounded">
+                            <img src="../img/titlePost.png" class="img-fluid" alt="TitlePost">
+                            <p class="blog-post-meta p-3">
+                                Posted on
+                                <time datetime="2022-11-18T12:42:15Z" class="date-no-year"
+                                    title="Friday, November 18, 2022 at 6:42:15 AM">Nov 18</time>
+                                • Originally published at
+                                <a href="#">profy.dev</a>
+                            </p>
+                            <h2 class="p-2">Data Structures In Frontend JavaScript In The Real World (With React Code
+                                Examples)</h2>
+                            <a href="#" class="ms-5">#react</a>
+                            <a href="#">#javascript</a>
+                            <a href="#">#webdev</a>
+                            <a href="#">#frontend</a>
+                            <p class="p-4">Data structures can be intimidating. Especially for the self-taught folks
+                                among us. If you
+                                already tried to study data structures in JavaScript you know what typically happens:
+                            </p>
+                            <ol>
+                                <li>A bunch of CS theory is thrown at you.</li>
+                                <li>You read pages of code that manually implement e.g. a linked list.</li>
+                                <li>All the examples are abstract using foo and bar or cats and dogs.</li>
+                            </ol>
+                            <img src="../img/postImage1.png" class="img-fluid mt-5 alt=" PostImage">
+                        </article>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-xl-block">
+                    <div class="position">
+                        <div class="p-4 mb-4 bg-light rounded">
+                            <div class="d-flex">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png"
+                                    class="crayons-avatar__image" alt="" loading="lazy">
+                                <h5 class="fst-italic">Gloria Maldonado</h5>
+                            </div>
+                            <button type="button"
+                                class="btn btn-primary d-grid gap-2 col-12 mx-auto mx-3">Follow</button>
+                            <p>Howdy, I’m Gloria. I’m a web developer living in United States. I am a fan of
+                                shop, data, and technology.</p>
+                            <h7 style="font-weight: bold;">LOCATION</h7>
+                            <p>NY, United States</p>
+                            <h7 style="font-weight: bold;">EDUCATION</h7>
+                            <p>International Business, Florida University</p>
+                            <h7 style="font-weight: bold;">WORK</h7>
+                            <p>Analyzify</p>
+                        </div>
+
+                        <div class="p-4 mb-4 bg-light rounded">
+                            <h4 class="fst-italic">More from <a class="text-decoration-none" href="#">Gloria
+                                    Maldonado</a></h4>
+                            <a class="border-top text-decoration-none text-reset text-nowrap mt-5" href="#">
+                                Robot Companions
+                                <div class=" ">
+                                    <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                    <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                                </div>
                             </a>
-                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                                <li><a class="dropdown-item" href="#">Copy Link</a></li>
-                                <li><a class="dropdown-item" href="#">Share to Twitter</a></li>
-                                <li><a class="dropdown-item" href="#">Share to Linkedin</a></li>
-                                <li><a class="dropdown-item" href="#">Share to Reddit</a></li>
-                                <li><a class="dropdown-item" href="#">Share to Facebook</a></li>
-                                <li><a class="dropdown-item" href="#">Report abuse</a></li>
-                            </ul>
+                            <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
+                                Robot Companions <div class="">
+                                    <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                    <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                                </div>
+                            </a>
+                            <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
+                                Robot Companions <div class="">
+                                    <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
+                                    <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
+                                </div>
+                            </a>
                         </div>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-sm-12 col-md-6 mx-2">
-                <div class="position" style="top: 10rem;">
-                    <article class="blog-post mt-5 bg-body-tertiary rounded">
-                        <img src="../img/titlePost.png" class="img-fluid" alt="TitlePost">
-                        <p class="blog-post-meta p-4">
-                            Posted on
-                            <time datetime="2022-11-18T12:42:15Z" class="date-no-year"
-                                title="Friday, November 18, 2022 at 6:42:15 AM">Nov 18</time>
-                            • Originally published at
-                            <a href="#">profy.dev</a>
-                        </p>
-                        <h2 class="p-4">Data Structures In Frontend JavaScript In The Real World (With React Code Examples)</h2>
-                        <a href="#" class="ms-5">#react</a>
-                        <a href="#">#javascript</a>
-                        <a href="#">#webdev</a>
-                        <a href="#">#frontend</a>
-                        <p class="p-4">Data structures can be intimidating. Especially for the self-taught folks among us. If you
-                            already tried to study data structures in JavaScript you know what typically happens:</p>
-                        <ol>
-                            <li>A bunch of CS theory is thrown at you.</li>
-                            <li>You read pages of code that manually implement e.g. a linked list.</li>
-                            <li>All the examples are abstract using foo and bar or cats and dogs.</li>
-                        </ol>
-                        <img src="../img/postImage1.png" class="img-fluid mt-5 alt=" PostImage">
-                    </article>
-                </div>
-            </div>
-            <div class="col-md-4 d-none d-md-block">
-                <div class="position">
-                    <div class="p-4 mb-4 bg-light rounded">
-                        <div class="d-flex">
-                            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png" class="crayons-avatar__image" alt="" loading="lazy">
-                        <h5 class="fst-italic">Gloria Maldonado</h5>
-                        </div>
-                        <button type="button" class="btn btn-primary d-grid gap-2 col-12 mx-auto mx-3">Follow</button>
-                        <p>Howdy, I’m Gloria. I’m a web developer living in United States. I am a fan of
-                            shop, data, and technology.</p>
-                        <h7 style="font-weight: bold;">LOCATION</h7>
-                        <p>NY, United States</p>
-                        <h7 style="font-weight: bold;">EDUCATION</h7>
-                        <p>International Business, Florida University</p>
-                        <h7 style="font-weight: bold;">WORK</h7>
-                        <p>Analyzify</p>
-                    </div>
-
-                    <div class="p-4 mb-4 bg-light rounded">
-                        <h4 class="fst-italic">More from <a class="text-decoration-none" href="#">Gloria Maldonado</a></h4>
-                        <a class="border-top text-decoration-none text-reset text-nowrap mt-5" href="#">
-                            Robot Companions
-                            <div class=" ">
-                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
-                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
-                            </div>
-                          </a>
-                          <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
-                            Robot Companions                            <div class="">
-                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
-                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
-                            </div>
-                          </a>
-                          <a class="border-top text-decoration-none text-reset text-nowrap" href="#">
-                            Robot Companions                            <div class="">
-                                <span class="mr-1"><span class="opacity-50">#</span>discuss</span>
-                                <span class="mr-1"><span class="opacity-50">#</span>beginners</span>
-                            </div>
-                          </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
-    <footer class="footer__container "
-        style="position: relative; top:800px; height: 230px; background-color: bg-secondary;">
-
-        <style>
-            .footer__container-list-link {
-                margin-right: 25px;
-            }
-        </style>
-
+    <footer class="footer__container bg-body-secondary">
         <p class="footer__container-text " style="text-align: center;"><a style="text-decoration: none;"
                 href="https://dev.to/">DEV Community</a>—A constructive and inclusive social network for software
             developers. With you every step of your journy.</p>
-        <ul class="footer__container-list d-flex flex-wrap " style=" display: flex; justify-content:center; list-style: none; ">
+        <ul class="footer__container-list d-flex flex-wrap "
+            style=" display: flex; justify-content:center; list-style: none; ">
             <li class="footer__container-list-link " style="list-style: none; "><a style="text-decoration: none"
                     href="">Home</a></li>
             <li class="footer__container-list-link"><a style="text-decoration: none;" href="">Listing</a></li>

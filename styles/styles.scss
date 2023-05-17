@@ -48,3 +48,28 @@
 .footer__container-list-link {
    margin-right: 25px;
 }
+
+#buttonforsearch{
+   left: 430px;
+}
+
+#secondary__navbar{
+   right: 40px;
+   top: 10px;
+}
+
+.footer__container{
+   position: relative;
+   height: 230px;
+   top:100px;
+}
+
+.btn__link-create
+{
+   text-decoration: none;
+}
+.btn__link-create:hover
+{
+   text-decoration: underline;
+   color: white;
+}
