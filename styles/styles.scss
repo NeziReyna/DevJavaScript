@@ -64,3 +64,12 @@
    top:100px;
 }
 
+.btn__link-create
+{
+   text-decoration: none;
+}
+.btn__link-create:hover
+{
+   text-decoration: underline;
+   color: white;
+}

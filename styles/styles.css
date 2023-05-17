@@ -45,10 +45,6 @@
   left: 430px;
 }
 
-#third_column {
-  margin-top: 20px;
-}
-
 #secondary__navbar {
   right: 40px;
   top: 10px;
@@ -58,4 +54,13 @@
   position: relative;
   height: 230px;
   top: 100px;
+}
+
+.btn__link-create {
+  text-decoration: none;
+}
+
+.btn__link-create:hover {
+  text-decoration: underline;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
