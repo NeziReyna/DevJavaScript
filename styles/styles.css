@@ -63,4 +63,8 @@
 .btn__link-create:hover {
   text-decoration: underline;
   color: white;
+}
+
+#icon__reaction {
+  margin-left: -10px;
 }/*# sourceMappingURL=styles.css.map */
