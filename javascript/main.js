@@ -1,4 +1,4 @@
 let getLogin = document.getElementById("loginButton")
 getLogin.addEventListener("click", () =>{
-  window.open("views/login.html", "_blank")
+  window.open("views/login.html")
 });
