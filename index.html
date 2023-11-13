@@ -23,22 +23,51 @@
         <a href="#" class="logo_button--header"><img class="site-logo_img" style="height: 40px; width: 50px;"
             src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
             alt="DEV Community"></a>
-        <div class="search__nav--section d-none d-md-block">
-          <form class="d-flex " role="search">
-            
-            <!--barra de busquda-->
 
-            
+            <!--barra de busquda-->
+        <!--<div class="search__nav--section d-none d-md-block">
+          <form class="d-flex " role="search">
             <input class="form-control me-2" style="width: 420px;" type="search" placeholder="Search"
               aria-label="Search"></input>
-
-              
-
             <button class="btn position-absolute" id="buttonforsearch" type="submit"><a href="#" class="mx-2"><img
                   src="./img/search_icon.svg" alt="search_icon"></a></button>
           </form>
         </div>
+      </div>-->
+
+      <div class="crayons-header--search js-search-form" id="header-search">
+        <form method="get" action="/search" role="search" accept-charset="UTF-8">
+          <input name="utf8" type="hidden" value="✓">
+          <div class="crayons-fields crayons-fields--horizontal">
+            <div class="crayons-field flex-1 relative">
+              <input class="crayons-header--search-input crayons-textfield" type="text" id="" name="q" placeholder="Search..." autocomplete="off" aria-label="Search term">
+              <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0">
+                <path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
+                </path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false"></svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      
       </div>
+
+      <form method="get" action="/search" role="search" accept-charset="UTF-8">
+        <input name="utf8" type="hidden" value="✓">
+        <div class="crayons-fields crayons-fields--horizontal">
+          <div class="crayons-field flex-1 relative">
+            <input class="crayons-header--search-input crayons-textfield" type="text" id="" name="q" placeholder="Search..." autocomplete="off" aria-label="Search term">
+            <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0">
+              <path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
+
+              </path><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false"></svg>
+            </button>
+          </div>
+        </div>
+      </form>
+
+
+
       <div class="right__nav--section d-flex flex-nowrap mx-1">
         <button id="loginButton" type="button" class="btn fw-bold d-md-block fs-6">Log in</button> 
 
@@ -57,8 +86,9 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bold;">DEV Community</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul id="lista" class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"><a class="nav-link">🏠Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">🗃️Reading List</a></li>
             <li class="nav-item"><a class="nav-link" href="#">📃Listings</a></li>
@@ -72,6 +102,7 @@
             <li class="nav-item"><a class="nav-link" href="#">📖Guides</a></li>
             <li class="nav-item"><a class="nav-link" href="#">🤔Software comparisons</a></li>
           </ul>
+          
           <h5 class="my-3" style="font-weight: bold;">Other</h5>
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"><a class="nav-link" href="#">👍Code of Conduct</a></li>
