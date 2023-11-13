@@ -32,9 +32,7 @@
         </div>
       </div>
       <div class="right__nav--section d-flex flex-nowrap mx-1">
-        <button id="loginButton" type="button" class="btn fw-bold d-md-block fs-6">Log in</button> 
-       
-
+        <button id="loginButton" type="button" class="btn fw-bold d-md-block fs-6">Log in</button>
         <button type="button" class="btn btn-outline-primary fw-bold d-none d-md-block fs-6 text"><a
             href="#"></a>Create account</button>          
       </div>
@@ -42,36 +40,6 @@
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bold;">DEV Community</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item"><a class="nav-link">🏠Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🗃️Reading List</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">📃Listings</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🎙️Podcasts</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🎥Videos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🏷️Tags</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🛍️Forem Shop</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">❤️Sponsors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🏳️‍🌈About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">📯Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">📖Guides</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🤔Software comparisons</a></li>
-          </ul>
-          <h5 class="my-3" style="font-weight: bold;">Other</h5>
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item"><a class="nav-link" href="#">👍Code of Conduct</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">🤓Privacy Policy</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">👀Terms of use</a></li>
-          </ul>
-          <div class="d-inline-flex justify-content-start mx-1 my-4" style="width: 100%;top: 50px;">
-            <a href="#" class="mx-2"><img src="./img/twitter.svg" alt="twitter"></a>
-            <a href="#" class="mx-2"><img src="./img/facebook.svg" alt="facebook"></a>
-            <a href="#" class="mx-2"><img src="./img/github.svg" alt="github"></a>
-            <a href="#" class="mx-2"><img src="./img/instagram.svg" alt="instagram"></a>
-            <a href="#" class="mx-2"><img src="./img/twitch.svg" alt="twitch"></a>
-            <a href="#" class="mx-2"><img src="./img/fosstodon.svg" alt="fosstodon"></a>
-          </div>
         </div>
       </div>
     </div>
@@ -84,9 +52,9 @@
                 <div class="card-body">
                   <h4 class="hackathon mt-3"> <strong> DEV Community is a community of 1,187,473 amazing developers  </strong></h4>
                   <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
-                  <button type="button" class="btn btn-outline-primary fw-bold d-none d-md-block fs-6 text"><a
-                    href="#"></a>Create account</button> 
-                  <button id="loginButton" type="button" class="btn fw-bold d-md-block fs-6">Log in</button>                 
+                  <a href="#"><button type="button" class="btn btn-outline-primary fw-bold d-none d-md-block fs-6 text">
+                    Create account</button> </a>
+                  <a href="./views/login.html"><button id="loginButton" type="button" class="btn fw-bold d-md-block fs-6">Log in</button></a>               
                 </div>
             </div>
         <div class="offcanvas-body">
@@ -143,16 +111,16 @@
             </ul>
           </div>
           <div class="w-100 col card justify-content-center" style="width: 18rem;">
-            <img
+            <a href="./views/post2.html"><img
               src="https://res.cloudinary.com/practicaldev/image/fetch/s--epIuEQb5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxc6ivfk5qnvrvo5nf5n.gif"
-              class="card-img-top" alt="...">
+              class="card-img-top" alt="..."></a>
             <div class="card-body">
               <div class="row my-2">
-                <div href="#" class="btn  col-1 outline-none btn-praimary d-flex justify-content-start"><img
+                <div class="btn  col-1 outline-none btn-praimary d-flex justify-content-start"><img
                     class="crayons-avatar__image" alt="" id="nav-profile-image"
                     src="https://res.cloudinary.com/practicaldev/image/fetch/s--QM2H33ep--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/7463/4c49cf34-952f-455a-a8d4-e49f7ad4a7f4.png">
                 </div>
-                <h5 class="col card-title">[Python 🐍 Mastery] Overview of Linked List in Python & Essential Linked List Operations 🛠️ </h5>
+                <h5 class="col card-title"><a href="./views/post2.html" class="nav-link">[Python 🐍 Mastery] Overview of Linked List in Python & Essential Linked List Operations 🛠️ </a></h5>
               </div>
               <div class="caryons-story_tags">
                 <a href="#" class="crayons-tag"><span class="crayons-tag_prefix">#</span>Python</a>
@@ -206,7 +174,7 @@
           <!--Post 1-->
           <div class="w-100 my-3 card  justify-content-center" style="width: 18rem;">
             <div>Dev Community</div>
-            <a href="#"><img
+              <a href="#"><img
                 src="https://res.cloudinary.com/practicaldev/image/fetch/s--wzgGMCLs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qpdtjnt4fnuwag8noec8.png"
                 class="card-img-top" alt="..." width="200" height="500"></a>
             <div class="card-body">
@@ -557,14 +525,7 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-        
-        <div class=" col-3 d-none d-xl-block mt-4" id="aside__derecho">
-          <div class="card text-bg-light mb-3" style="max-width: 18rem;">
-=======
         <div class=" col-2 d-none d-xl-block mt-4" id="aside__derecho">
->>>>>>> a1ae6f91982b609f7735fee47e51b9246957c2db
             <section>
               <div class="card right-aside mt-3">
                 <div class="card-body">
